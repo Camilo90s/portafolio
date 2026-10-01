@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Camilo Soto · Portafolio en construcción</title>
+        <meta
+            name="description"
+            content="Portafolio de Camilo Soto, diseñador de interfaces y desarrollador frontend. Muy pronto con proyectos de diseño y desarrollo web."
+        />
+        <meta name="theme-color" content="#09090b" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/src/style.css" />
+    </head>
+
+    <body
+        class="bg-dots min-h-dvh bg-zinc-950 font-sans text-zinc-50 antialiased"
+    >
+        <main class="flex min-h-dvh items-center justify-center px-4 py-10">
+            <section
+                class="relative w-full max-w-sm overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-950 px-6 pt-10 pb-8 text-center shadow-2xl shadow-black/60"
+            >
+                <!-- Brillo naranja detrás del avatar -->
+                <div
+                    aria-hidden="true"
+                    class="pointer-events-none absolute -top-28 -left-16 size-80 rounded-full bg-brand-500/20 blur-3xl"
+                ></div>
+
+                <div class="relative">
+                    <!-- Avatar: cambia rounded-2xl por rounded-full si lo quieres circular -->
+                    <div class="relative mx-auto size-28">
+                        <img
+                            src="/avatar.webp"
+                            alt="Foto de Camilo Soto"
+                            width="112"
+                            height="112"
+                            class="size-28 rounded-2xl border border-zinc-700 object-cover shadow-xl shadow-brand-950/50"
+                        />
+                        <span
+                            aria-hidden="true"
+                            class="absolute -right-1 -bottom-1 size-4 rounded-full bg-brand-500 ring-4 ring-zinc-950"
+                        ></span>
+                    </div>
+
+                    <!-- Badge -->
+                    <div
+                        class="mt-6 inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900 px-3 py-1 text-xs font-medium text-zinc-200"
+                    >
+                        <span class="relative flex size-2">
+                            <span
+                                class="absolute inline-flex size-full animate-ping rounded-full bg-brand-500 opacity-75 motion-reduce:animate-none"
+                            ></span>
+                            <span
+                                class="relative inline-flex size-2 rounded-full bg-brand-500"
+                            ></span>
+                        </span>
+                        En construcción
+                    </div>
+
+                    <!-- Nombre y rol -->
+                    <h1 class="mt-4 text-3xl font-bold tracking-tight">
+                        Camilo Soto
+                    </h1>
+                    <p
+                        class="mt-1 text-[13px] font-medium text-brand-400 sm:text-sm"
+                    >
+                        <span class="whitespace-nowrap"
+                            >Diseñador de interfaces&nbsp;·</span
+                        >
+                        <span class="whitespace-nowrap"
+                            >Desarrollador frontend</span
+                        >
+                    </p>
+
+                    <!-- Mensaje -->
+                    <p
+                        class="mt-6 rounded-xl border border-zinc-800/60 bg-zinc-900 px-5 py-4 text-sm leading-relaxed text-zinc-300"
+                    >
+                        Estoy construyendo mi portafolio. Muy pronto podrás ver
+                        aquí mis proyectos de diseño y desarrollo web.
+                    </p>
+
+                    <!-- Progreso: cambia w-3/5 y los "60" cuando avances -->
+                    <div
+                        class="mt-4 rounded-xl border border-zinc-800/60 bg-zinc-900 px-5 py-4 text-left"
+                    >
+                        <div
+                            class="flex items-center justify-between text-xs font-medium"
+                        >
+                            <span id="progreso" class="text-zinc-300"
+                                >Progreso del sitio</span
+                            >
+                            <span class="text-brand-400">60%</span>
+                        </div>
+                        <div
+                            role="progressbar"
+                            aria-labelledby="progreso"
+                            aria-valuenow="60"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            class="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-zinc-800"
+                        >
+                            <div
+                                class="h-full w-3/5 rounded-full bg-brand-500"
+                            ></div>
+                        </div>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="mt-6 space-y-3">
+                        <a
+                            href="mailto:andresotocamilo@gmail.com"
+                            class="flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-brand-600 text-sm font-semibold text-white transition-colors hover:bg-brand-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-400"
+                        >
+                            <svg
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="size-4"
+                            >
+                                <rect
+                                    width="20"
+                                    height="16"
+                                    x="2"
+                                    y="4"
+                                    rx="2"
+                                />
+                                <path
+                                    d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"
+                                />
+                            </svg>
+                            Escríbeme
+                        </a>
+
+                        <!-- Reemplaza TU-USUARIO por tu usuario de LinkedIn -->
+                        <a
+                            href="www.linkedin.com/in/uiwithcamilo"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex h-11 w-full items-center justify-center gap-2 rounded-xl border border-zinc-700/60 bg-zinc-800 text-sm font-semibold text-zinc-100 transition-colors hover:bg-zinc-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-400"
+                        >
+                            <svg
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="size-4"
+                            >
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                />
+                                <rect width="4" height="12" x="2" y="9" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+
+                    <!-- Footer -->
+                    <hr class="mt-8 border-zinc-800" />
+                    <footer class="mt-6 text-xs text-brand-200/60">
+                        © 2026 Camilo Soto · uiwithcamilo.com
+                    </footer>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

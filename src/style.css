@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+
+  /* Naranja de marca (el mismo tono cálido de la foto) */
+  --color-brand-200: #fed7aa;
+  --color-brand-300: #fdba74;
+  --color-brand-400: #fb923c;
+  --color-brand-500: #f97316;
+  --color-brand-600: #ea580c;
+  --color-brand-950: #431407;
+}
+
+/* Patrón de puntos del fondo */
+@utility bg-dots {
+  background-image: radial-gradient(var(--color-zinc-800) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
